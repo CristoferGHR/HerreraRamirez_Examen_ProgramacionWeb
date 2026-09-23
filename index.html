@@ -1,11 +1,154 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bloom and root</title>
+    <title>Bloom &amp; Root | Florería</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&family=Inter:wght@400;500;600&display=swap">
+
+    <!-- Hoja de estilos externa -->
+    <link rel="stylesheet" href="./css/estilos.css">
 </head>
 <body>
-    
+
+    <!-- Encabezado y navegacion -->
+    <header>
+        <nav class="header-navigation">
+            <a href="#inicio" class="logo">Bloom <span>&amp;</span> Root</a>
+            <ul>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#productos">Arreglos</a></li>
+                <li><a href="#temporada">Temporada</a></li>
+                <li><a href="#newsletter">Newsletter</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Hero con fotografia floral -->
+        <section class="hero" id="inicio">
+            <div class="hero-texto">
+                <p class="etiqueta">Florería artesanal</p>
+                <h1>Flores que cuentan <span>historias</span></h1>
+                <p>
+                    Arreglos hechos a mano con flores de temporada, cultivadas por productores
+                    locales y entregadas con cariño a tu puerta.
+                </p>
+                <a href="#productos" class="btn-primary">Ver arreglos</a>
+            </div>
+            <img src="./imagenes/hero-ramo.jpg" alt="Ramo de flores de temporada" class="hero-imagen">
+        </section>
+
+        <!-- Contenido editorial -->
+        <section class="nosotros" id="nosotros">
+            <img src="./imagenes/taller.jpg" alt="Fachada de la florería con cubetas llenas de flores frescas">
+            <div>
+                <p class="etiqueta">Nuestra historia</p>
+                <h2>De la raiz a tus manos</h2>
+                <p>
+                    Bloom &amp; Root nacio en un pequeño taller con una idea sencilla: que cada
+                    ramo refleje la estacion en la que fue creado. Elegimos cada tallo por su
+                    forma, su aroma y su color.
+                </p>
+                <p>
+                    Trabajamos con productores cercanos, evitamos el plástico en nuestros
+                    empaques y diseñamos cada arreglo de forma unica, para que ningún
+                    regalo se parezca a otro.
+                </p>
+            </div>
+        </section>
+
+        <!-- Tarjetas de producto -->
+        <section class="productos" id="productos">
+            <p class="etiqueta">Los favoritos</p>
+            <h2>Arreglos de la casa</h2>
+
+            <div class="products-container">
+                <article class="product-card">
+                    <img src="./imagenes/tulipanes.jpg" alt="Tulipanes rosas en un frasco de vidrio">
+                    <h3>Tulipanes rosa</h3>
+                    <p>Doce tulipanes en frasco de vidrio con liston natural.</p>
+                    <strong>$650 MXN</strong>
+                </article>
+
+                <article class="product-card">
+                    <img src="./imagenes/ramo-corazon.jpg" alt="Manos sosteniendo flores acomodadas en forma de coraxon">
+                    <h3>Corazon en flor</h3>
+                    <p>Rosas, peonias y fresias en tonos pastel.</p>
+                    <strong>$890 MXN</strong>
+                </article>
+
+                <article class="product-card">
+                    <img src="./imagenes/girasoles.jpg" alt="Girasol iluminado por el sol">
+                    <h3>Girasoles dorados</h3>
+                    <p>Un ramo luminoso para alegrar cualquier espacio.</p>
+                    <strong>$520 MXN</strong>
+                </article>
+
+                <article class="product-card">
+                    <img src="./imagenes/begonias.jpg" alt="Begonias rojas en plena floracion">
+                    <h3>Begonia en maceta</h3>
+                    <p>Planta de interior con maceta de barro artesanal.</p>
+                    <strong>$380 MXN</strong>
+                </article>
+            </div>
+        </section>
+
+        <!-- Banner estacional -->
+        <section class="banner" id="temporada">
+            <img src="./imagenes/banner-otono.jpg" alt="Arreglo floral en tonos de otoño">
+            <div>
+                <p class="etiqueta">Temporada de otoño</p>
+                <h2>Colección Atardecer</h2>
+                <p>
+                    Tonos terracota, ámbar y dorado para despedir el verano.
+                    Disponible solo por tiempo limitado.
+                </p>
+                <a href="#productos" class="btn-secundario">Descubrir colección</a>
+            </div>
+        </section>
+
+        <!-- Newsletter -->
+        <section class="newsletter" id="newsletter">
+            <h2>Recibe flores en tu bandeja</h2>
+            <p>
+                Suscríbete y recibe consejos de cuidado, novedades de temporada y un 10% de
+                descuento en tu primer pedido.
+            </p>
+
+            <form action="" class="newsletter-form">
+                <label for="correo">Correo electronico</label>
+                <div class="input-item">
+                    <input class="form-input" type="email" id="correo" name="correo" placeholder="tucorreo@ejemplo.com" required>
+                    <button class="btn-primary" type="submit">Suscribirme</button>
+                </div>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Pie de  verde salvia -->
+    <footer>
+        <div class="footer-columnas">
+            <div>
+                <p class="logo">Bloom <span>&amp;</span> Root</p>
+                <p>Florería artesanal desde 2019.</p>
+            </div>
+            <div>
+                <h3>Visítanos</h3>
+                <p>Calle de las Flores 128<br>Aguascalientes, México</p>
+            </div>
+            <div>
+                <h3>Horario</h3>
+                <p>Lunes a sábado<br>9:00 a 19:00 h</p>
+            </div>
+        </div>
+        <p class="creditos">
+            &copy; 2026 Bloom &amp; Root.
+        </p>
+    </footer>
+
 </body>
 </html>
